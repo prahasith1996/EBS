@@ -10,7 +10,7 @@ services:
       - '5432:5432'
     volumes:
       - db:/var/lib/postgresql/data
-      - ./init:/docker-entrypoint-initdb.d/
+      - ./app/init:/docker-entrypoint-initdb.d/
 volumes:
   db:
     driver: local
